@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+
+    <head>
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book Appointment - Max's Handyman</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>Max's Handyman Services</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="appointment.html">Book Appointment</a></li> 
+                </ul>
+            </nav>
+        </header>
+        <section id="appointment">
+  <h2>Book an Appointment</h2>
+        <form id="appointment-form" method="POST" action="appointment.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="service_type">Service Type:</label>
+            <select id="service_type" name="service_type">
+                <option value="plumbing">Plumbing</option>
+                <option value="electrical">Electrical Work</option>
+                <option value="furniture_assembly">Furniture Assembly</option>
+            </select>
+            <label for="appointment_date">Preferred Appointment Date:</label>
+            <input type="date" id="appointment_date" name="appointment_date" required>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            <button type="submit">Book Appointment</button>
+        </form>
+    </section>
+    </body>
+</html>
